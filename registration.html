@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="first-container">
+            <div class="content">
+                <h3>welcome to our application</h3>
+                <p>sign in to use the platform</p>
+            </div>
+            <br>
+            <div class="form-box">
+                <form action="main.html">
+                 <label for="email" id="label1">email or phone number</label>
+                 <br>
+                 <input type="email" name="email" id="email" onkeyup="moveup()">
+                 <br>
+                 <label for="password" id="label2">password</label>
+                 <br>
+                 <input type="password" name="password" id="password" onkeyup="moveup()">
+                 <br>
+                 <button>log in</button>
+                 <p class="or-links">or</p>
+                 <div class="buttons-links">
+                    <button class="first-1"><i class="fa-brands fa-twitter"></i>continue with twitter</button>
+                    <button class="first-2"><i class="fa-brands fa-apple"></i>continue with apple</button>
+                 </div>
+                </form>
+                
+            </div>
+        </div>
+        <div class="last-container">
+
+        </div>
+    </div>
+    <!-------------javascript code-------------->
+    <script>
+        function moveup(){
+            var label1=document.getElementById("label1");
+            var label2=document.getElementById("label2");
+            var email=document.getElementById("email");
+            var password =document.getElementById("password");
+            label1.style.bottom="200px";
+            label2.style.bottom="-250px";
+        }
+    </script>
+</body>
+</html>
